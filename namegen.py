@@ -3,11 +3,6 @@ CONSONANTS = ["b", "c", "d", "f", "g", "h", "j", "k", "l", "m", "n", "p", "q", "
 VOWELS = ["a", "e", "ee", "i", "o", "oo", "u", "y"]
 CV_COMB = ["c", "c", "c", "c", "c", "c", "c", "c", "c", "v", "v", "v", "v", "v", "v", "v","v", "cc", "cc", "cc", "vv", "vv", "cv", "cv", "cv", "cv", "cv", "cv", "cv", "cv", "cv", "cc", "cc", "vc", "vc", "vc", "vc", "vc", "cc"] # there are duplicates because the duplicated ones will appear more often
 
-def c():
-    return random.choice(CONSONANTS)
-def v():
-    return random.choice(VOWELS)
-
 def randname_customizable(template, capitalize=False):
     return_name = ""
     for letter in template:
