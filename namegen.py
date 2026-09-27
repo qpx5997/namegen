@@ -20,7 +20,7 @@ def randname(length, capitalize=False):
     if length is None:
         length = random.randint(3, 7)
     template = ""
-    for i in range(0, length+1):
+    for i in range(length):
         template += random.choice(CV_COMB)
     if capitalize == True:
         return_name = randname_customizable(template, capitalize=True)
